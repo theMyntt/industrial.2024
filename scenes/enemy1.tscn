@@ -1,38 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://c2m451qbgtxsv"]
+[gd_scene load_steps=13 format=3 uid="uid://c2m451qbgtxsv"]
 
 [ext_resource type="Texture2D" uid="uid://c0canecg3kfjp" path="res://sprites/bixos.png" id="1_c4m31"]
-
-[sub_resource type="GDScript" id="GDScript_3wh4f"]
-script/source = "extends CharacterBody2D
-
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-@onready var texture := $anim as AnimatedSprite2D
-
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis(\"ui_left\", \"ui_right\")
-	if direction:
-		velocity.x = direction * SPEED
-		texture.play(\"run\")
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
-"
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6j4s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_haffw"]
 atlas = ExtResource("1_c4m31")
@@ -115,18 +83,17 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6j4s"]
+size = Vector2(18, 18)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = SubResource("GDScript_3wh4f")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(107, 43)
-shape = SubResource("RectangleShape2D_n6j4s")
-
-[node name="anim" type="AnimatedSprite2D" parent="."]
-position = Vector2(108, 44)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_abggk")
 animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.352079
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
+shape = SubResource("RectangleShape2D_n6j4s")
