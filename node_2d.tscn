@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3ksevqgcmjdy"]
+
+[ext_resource type="Texture2D" uid="uid://qpo2xo6tas5u" path="res://terreno.png" id="1_fnt5j"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Terreno" type="Sprite2D" parent="."]
+position = Vector2(575.25, 324.25)
+scale = Vector2(4.52148, 4.48264)
+texture = ExtResource("1_fnt5j")
