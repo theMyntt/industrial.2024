@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpuwxgchgb1tr"
-path="res://.godot/imported/road.png-1a61e1b4edaf02541884c2f9324f9481.ctex"
+uid="uid://db1eb0njgfcfb"
+path="res://.godot/imported/skeleton_die.png-ea677efdd51eb69a185ac25e737b9129.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/road/road.png"
-dest_files=["res://.godot/imported/road.png-1a61e1b4edaf02541884c2f9324f9481.ctex"]
+source_file="res://sprites/background/skeleton/skeleton_die.png"
+dest_files=["res://.godot/imported/skeleton_die.png-ea677efdd51eb69a185ac25e737b9129.ctex"]
 
 [params]
 
