@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b74mu86kehego"
-path="res://.godot/imported/TilesetGraveyard.png-f9a034157a47fae7ae580489f92474a0.ctex"
+uid="uid://db1eb0njgfcfb"
+path="res://.godot/imported/skeleton_die.png-ea677efdd51eb69a185ac25e737b9129.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/grave/TilesetGraveyard.png"
-dest_files=["res://.godot/imported/TilesetGraveyard.png-f9a034157a47fae7ae580489f92474a0.ctex"]
+source_file="res://sprites/background/skeleton/skeleton_die.png"
+dest_files=["res://.godot/imported/skeleton_die.png-ea677efdd51eb69a185ac25e737b9129.ctex"]
 
 [params]
 

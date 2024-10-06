@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db1eb0njgfcfb"
-path="res://.godot/imported/Skeleton_01_White_Die.png-b76cb79fd2a154719d0799eaa5d6859d.ctex"
+uid="uid://cex2gh0yymqsp"
+path="res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/skeleton/Skeleton_01_White_Die.png"
-dest_files=["res://.godot/imported/Skeleton_01_White_Die.png-b76cb79fd2a154719d0799eaa5d6859d.ctex"]
+source_file="res://sprites/background/grass/grass.png"
+dest_files=["res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buatgrpagcf8t"
-path="res://.godot/imported/Character-and-Zombie.png-fdb8fc954f6299316ec9db4d2b537d9e.ctex"
+uid="uid://blmw0nthlrd2h"
+path="res://.godot/imported/graves_default.png-23e561f7921079aaf2f8a9faee5d0817.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/zombie/Character-and-Zombie.png"
-dest_files=["res://.godot/imported/Character-and-Zombie.png-fdb8fc954f6299316ec9db4d2b537d9e.ctex"]
+source_file="res://sprites/background/default/graves_default.png"
+dest_files=["res://.godot/imported/graves_default.png-23e561f7921079aaf2f8a9faee5d0817.ctex"]
 
 [params]
 

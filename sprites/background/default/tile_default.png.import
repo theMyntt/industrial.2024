@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cex2gh0yymqsp"
-path="res://.godot/imported/Ghostly_grass_tileset.png-a21f675e2f3ddbe35e6785d6d4b0b123.ctex"
+uid="uid://cakxaphbqe58m"
+path="res://.godot/imported/tile_default.png-60b10600af69cdd4b4df70f10031b318.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/background/grass/Ghostly_grass_tileset.png"
-dest_files=["res://.godot/imported/Ghostly_grass_tileset.png-a21f675e2f3ddbe35e6785d6d4b0b123.ctex"]
+source_file="res://sprites/background/default/tile_default.png"
+dest_files=["res://.godot/imported/tile_default.png-60b10600af69cdd4b4df70f10031b318.ctex"]
 
 [params]
 
