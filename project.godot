@@ -10,8 +10,10 @@ config_version=5
 
 [application]
 
+=======
 config/name="GDefense"
 config/version="0.0.1"
+run/main_scene="res://scenes/first_world.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
