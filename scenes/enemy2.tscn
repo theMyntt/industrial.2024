@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwakh3w2lcdet"]
+
+[ext_resource type="Texture2D" uid="uid://c0canecg3kfjp" path="res://sprites/bixos.png" id="1_88tpw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1mja"]
+atlas = ExtResource("1_88tpw")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l56gc"]
+atlas = ExtResource("1_88tpw")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fwyvg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1mja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l56gc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_egeye"]
+
+[node name="enemy2" type="CharacterBody2D"]
+position = Vector2(132, 31)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(123, 60)
+sprite_frames = SubResource("SpriteFrames_fwyvg")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(123, 60)
+shape = SubResource("RectangleShape2D_egeye")

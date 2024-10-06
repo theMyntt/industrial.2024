@@ -2,7 +2,6 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
 <<<<<<<< HEAD:sprites/background/grass/grass.png.import
 uid="uid://cex2gh0yymqsp"
 path="res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"
@@ -10,17 +9,12 @@ path="res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"
 uid="uid://4jt7ce2uhpwm"
 path="res://.godot/imported/desert.png-7c698be546c96214285a10eb7ad9d0ac.ctex"
 >>>>>>>> develop:sprites/background/default/desert.png.import
-=======
-uid="uid://c1vbvyx04l2af"
-path="res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"
->>>>>>> develop
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD
 <<<<<<<< HEAD:sprites/background/grass/grass.png.import
 source_file="res://sprites/background/grass/grass.png"
 dest_files=["res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"]
@@ -28,10 +22,6 @@ dest_files=["res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ct
 source_file="res://sprites/background/default/desert.png"
 dest_files=["res://.godot/imported/desert.png-7c698be546c96214285a10eb7ad9d0ac.ctex"]
 >>>>>>>> develop:sprites/background/default/desert.png.import
-=======
-source_file="res://sprites/background/grass/grass.png"
-dest_files=["res://.godot/imported/grass.png-b3259650219edd543f29efa1974bbfd1.ctex"]
->>>>>>> develop
 
 [params]
 
