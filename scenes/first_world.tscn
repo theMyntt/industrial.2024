@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=4 uid="uid://bnkmnqafapm2n"]
+[gd_scene load_steps=16 format=4 uid="uid://bnkmnqafapm2n"]
 
 [ext_resource type="Texture2D" uid="uid://duarpnr5xboto" path="res://sprites/Tropics/Terrain (16 x 16).png" id="1_sqsif"]
+[ext_resource type="Texture2D" uid="uid://curw4kavofid" path="res://sprites/Holly/Idle (32 x 32).png" id="2_q8i5o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p62hv"]
 texture = ExtResource("1_sqsif")
@@ -45,9 +46,93 @@ texture = ExtResource("1_sqsif")
 [sub_resource type="TileSet" id="TileSet_8d2x5"]
 sources/0 = SubResource("TileSetAtlasSource_p62hv")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlfmg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlxxh"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5n3h"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vx5f3"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ec4v"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtsqp"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lq63"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kx23g"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivt3e"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7u03"]
+atlas = ExtResource("2_q8i5o")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2pclf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlxxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5n3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vx5f3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ec4v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtsqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lq63")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kx23g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivt3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7u03")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
 tile_map_data = PackedByteArray("AAAAAAkAAAADAAEAAAABAAkAAAAEAAEAAAACAAkAAAAEAAEAAAADAAkAAAAEAAEAAAAEAAkAAAAEAAEAAAAFAAkAAAAEAAEAAAAGAAkAAAAEAAEAAAAHAAkAAAAEAAEAAAAIAAkAAAAEAAEAAAAJAAkAAAAEAAEAAAAKAAkAAAAEAAEAAAALAAkAAAAEAAEAAAAMAAkAAAAEAAEAAAANAAkAAAAEAAEAAAAOAAkAAAAFAAEAAAABAAoAAAAEAAIAAAABAAsAAAAEAAIAAAABAAwAAAAEAAIAAAABAA0AAAAEAAIAAAABAA4AAAAEAAIAAAABAA8AAAAEAAYAAAACAAoAAAAEAAIAAAACAAsAAAAEAAIAAAACAAwAAAAEAAIAAAACAA0AAAAEAAIAAAACAA4AAAAEAAIAAAACAA8AAAAEAAYAAAADAAoAAAAEAAIAAAADAAsAAAAEAAIAAAADAAwAAAAEAAIAAAADAA0AAAAEAAIAAAADAA4AAAAEAAIAAAADAA8AAAAEAAYAAAAEAAoAAAAEAAIAAAAEAAsAAAAEAAIAAAAEAAwAAAAEAAIAAAAEAA0AAAAEAAIAAAAEAA4AAAAEAAIAAAAEAA8AAAAEAAYAAAAFAAoAAAAEAAIAAAAFAAsAAAAEAAIAAAAFAAwAAAAEAAIAAAAFAA0AAAAEAAIAAAAFAA4AAAAEAAIAAAAFAA8AAAAEAAYAAAAGAAoAAAAEAAIAAAAGAAsAAAAEAAIAAAAGAAwAAAAEAAIAAAAGAA0AAAAEAAIAAAAGAA4AAAAEAAIAAAAGAA8AAAAEAAYAAAAHAAoAAAAEAAIAAAAHAAsAAAAEAAIAAAAHAAwAAAAEAAIAAAAHAA0AAAAEAAIAAAAHAA4AAAAEAAIAAAAHAA8AAAAEAAYAAAAIAAoAAAAEAAIAAAAIAAsAAAAEAAIAAAAIAAwAAAAEAAIAAAAIAA0AAAAEAAIAAAAIAA4AAAAEAAIAAAAIAA8AAAAEAAYAAAAJAAoAAAAEAAIAAAAJAAsAAAAEAAIAAAAJAAwAAAAEAAIAAAAJAA0AAAAEAAIAAAAJAA4AAAAEAAIAAAAJAA8AAAAEAAYAAAAKAAoAAAAEAAIAAAAKAAsAAAAEAAIAAAAKAAwAAAAEAAIAAAAKAA0AAAAEAAIAAAAKAA4AAAAEAAIAAAAKAA8AAAAEAAYAAAALAAoAAAAEAAIAAAALAAsAAAAEAAIAAAALAAwAAAAEAAIAAAALAA0AAAAEAAIAAAALAA4AAAAEAAIAAAALAA8AAAAEAAYAAAAMAAoAAAAEAAIAAAAMAAsAAAAEAAIAAAAMAAwAAAAEAAIAAAAMAA0AAAAEAAIAAAAMAA4AAAAEAAIAAAAMAA8AAAAEAAYAAAANAAoAAAAEAAIAAAANAAsAAAAEAAIAAAANAAwAAAAEAAIAAAANAA0AAAAEAAIAAAANAA4AAAAEAAIAAAANAA8AAAAEAAYAAAAAAAoAAAADAAIAAAAAAAsAAAADAAIAAAAAAAwAAAADAAIAAAAAAA0AAAADAAIAAAAAAA4AAAADAAIAAAAAAA8AAAABAAQAAAAOAAsAAAAFAAIAAAAOAAoAAAAFAAIAAAAOAAwAAAAFAAIAAAAOAA0AAAAFAAIAAAAOAA4AAAAFAAIAAAAOAA8AAAAHAAQAAAA=")
 tile_set = SubResource("TileSet_8d2x5")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_nlfmg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/CollisionShape2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_2pclf")
+animation = &"idle"
+autoplay = "idle"
