@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://ch7ufu4jodf7d"]
+[gd_scene load_steps=21 format=3 uid="uid://ch7ufu4jodf7d"]
 
 [ext_resource type="Script" path="res://scripts/holly_character.gd" id="1_keew2"]
 [ext_resource type="Texture2D" uid="uid://curw4kavofid" path="res://sprites/Holly/Idle (32 x 32).png" id="1_t2ujn"]
+[ext_resource type="Texture2D" uid="uid://1kjuhi3h04js" path="res://sprites/Holly/Running (32 x 32).png" id="3_m5j07"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jlxxh"]
 atlas = ExtResource("1_t2ujn")
@@ -39,6 +40,30 @@ region = Rect2(224, 0, 32, 32)
 atlas = ExtResource("1_t2ujn")
 region = Rect2(256, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_bay2j"]
+atlas = ExtResource("3_m5j07")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uihol"]
+atlas = ExtResource("3_m5j07")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecl35"]
+atlas = ExtResource("3_m5j07")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0x2xc"]
+atlas = ExtResource("3_m5j07")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qr4ry"]
+atlas = ExtResource("3_m5j07")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8thgf"]
+atlas = ExtResource("3_m5j07")
+region = Rect2(160, 0, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_2pclf"]
 animations = [{
 "frames": [{
@@ -72,6 +97,29 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bay2j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uihol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecl35")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0x2xc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qr4ry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8thgf")
+}],
+"loop": true,
+"name": &"running",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nlfmg"]
@@ -83,7 +131,7 @@ script = ExtResource("1_keew2")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_2pclf")
-animation = &"idle"
+animation = &"running"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
